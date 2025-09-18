@@ -28,9 +28,29 @@
         </p>
           
         <!--colour of t-shirt - 3 options - require one colour-->
-        
-        <!--size of t-shirt - 6 options: XS, S, M, L, XL, XXL - require one size-->
+        <p>
+        <label for="tcolor">*T-Shirt Color:</label>
+        <input id="tcolor" list="color" name="user_tcolor" required>
+        <datalist id="color">
+          <option value="Red"></option>
+          <option value="Green"></option>
+          <option value="Blue"></option>
+        </datalist>
+        </p>
 
+        <!--size of t-shirt - 6 options: XS, S, M, L, XL, XXL - require one size-->
+        <p>
+        <label for="tsize">*Size:</label>
+        <input id="tsize" list="size" name="user_size" required>
+        <datalist id="size">
+          <option value="XS"></option>
+          <option value="S"></option>
+          <option value="M"></option>
+          <option value="L"></option>
+          <option value="XL"></option>
+          <option value="XXL"></option>
+        </datalist>
+        </p>
         <!-- All inputs have associated labels-->
         
         <p>* Required</p>
