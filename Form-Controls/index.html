@@ -12,20 +12,35 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        
+      <form action="" method="post">
+               
         <!--customer's name - validity - string of two characters or more-->
-        
-        <!-- customer's email - validity -->
+        <p>
+           <label for="name">*Name:</label>
+           <input type="text" id="name" name="user_name" minlength="2" required/>
+       </p>
 
+        <!-- customer's email - validity -->
+        <p>
+           <label for="mail">*Email:</label>
+           <input type="email" id="mail" name="user_email" required pattern="^[^@]+@[^@]+\.(com|co\.uk|org|net)$"/>
+           <p>Accepted: .com .co.uk .org .net</p>
+        </p>
+          
         <!--colour of t-shirt - 3 options - require one colour-->
         
         <!--size of t-shirt - 6 options: XS, S, M, L, XL, XXL - require one size-->
 
         <!-- All inputs have associated labels-->
+        
+        <p>* Required</p>
+        
+        <p class="button">
+          <button type="submit">Submit</button>
+        </p>
   
       </form>
+
     </main>
     <footer>
       <!-- change to your name-->
